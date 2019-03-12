@@ -33,3 +33,9 @@ fi
 # various stuff
 sudo apt install -y \
 	fonts-powerline
+
+
+# dev tools
+sudo snap install pycharm-community --classic
+sudo snap install gitkraken
+sudo snap install clion --classic
