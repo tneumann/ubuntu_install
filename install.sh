@@ -56,3 +56,5 @@ if [ ! -f /usr/local/bin/OpenCorsairLink.elf ]; then
 	fi
 fi
 
+# cpu load indicator applet
+sudo apt-get install -y gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0 chrome-gnome-shell
