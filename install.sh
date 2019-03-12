@@ -39,3 +39,17 @@ sudo apt install -y \
 sudo snap install pycharm-community --classic
 sudo snap install gitkraken
 sudo snap install clion --classic
+
+echo "Should I install corsair water cooling tools?"
+read -p "y (yes) or n (no): " USER_INPUT
+if [[ "$USER_INPUT" == "y" ]]; then
+	sudo apt install libusb-1.0-0 libusb-1.0-0-dev pkg-config
+	cd /tmp
+	git clone git@github.com:audiohacked/OpenCorsairLink.git
+	cd OpenCorsairLink
+	make
+	mkdir -p ~/bin
+	sudo cp ./OpenCorsairLink.elf /usr/local/bin
+	cd -
+
+fi
