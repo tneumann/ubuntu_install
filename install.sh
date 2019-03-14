@@ -9,7 +9,8 @@ sudo apt install -y \
 	git \
 	ssh \
 	feh \
-        silversearcher-ag
+        silversearcher-ag \
+        htop
 
 # setup oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
