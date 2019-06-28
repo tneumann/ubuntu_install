@@ -61,3 +61,8 @@ fi
 # cpu load indicator applet
 sudo apt-get install -y gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0 chrome-gnome-shell
 firefox "https://extensions.gnome.org/extension/120/system-monitor/"
+
+if [ ! -d ~/.fzf ]; then
+        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+        ~/.fzf/install --bin
+fi
