@@ -10,7 +10,9 @@ sudo apt install -y \
 	ssh \
 	feh \
         silversearcher-ag \
-        htop
+        htop \
+        nautilus-dropbox \
+        vlc
 
 # setup oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
